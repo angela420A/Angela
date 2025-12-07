@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo{
+    width: 30%;
+}
+
+.navbar-content {
+    width: 70%;
+}
