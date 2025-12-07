@@ -1,30 +1,40 @@
 import '../styles/NavBar.css'
+import { FaGithub, FaLinkedin  } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
 function NavBar(){
+    const iconSize = 23;
+
     return(
         <nav className="navbar">
             <div className="logo">
                 <a href="#">Angela Kuo</a>
             </div>
             <div className="navbar-content">
-                <ul className="nav-content-item nav-links">
-                    <li className="nav-link" href="#">
+                <ul className="nav-content-item nav-link">
+                    <li href="#">
                         Home
                     </li>
-                    <li className="nav-link" href="#">
+                    <li href="#">
                         About
                     </li>
-                    <li className="nav-link" href="#">
+                    <li href="#">
                         Experience
                     </li>
-                    <li className="nav-link" href="#">
+                    <li href="#">
                         Projects
                     </li>
                 </ul>
                 <div className="nav-content-item nav-connect">
-                    <a href="#">Email</a>
-                    <a href="#">Github</a>
-                    <a href="#">Linkedin</a>
+                    <div>
+                        <MdOutlineEmail size={iconSize} />
+                    </div>
+                    <div>
+                        <FaGithub size={iconSize} />
+                    </div>
+                    <div>
+                        <FaLinkedin size={iconSize} />
+                    </div>
                 </div>
             </div>
         </nav>
