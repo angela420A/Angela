@@ -1,16 +1,54 @@
-# React + Vite
+<p align="center">
+    <img src="https://i.pinimg.com/564x/80/c1/ac/80c1ac7c789511d928e73a36be8ed578.jpg">
+</p>
+<h1 align="center">
+    React & Vite
+</h1>
+<p align="center">
+    This project serves as Angela's personal website, showcasing her work as a software engineer.
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 🛠 Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To get this project up and running, follow these steps:
 
-## React Compiler
+1.  **Prerequisites:** Ensure you have Node.js and npm (or yarn) installed.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2.  **Installation:**
+    Navigate to the project directory and install the dependencies:
+    ```bash
+    npm install
+    # or
+    yarn
+    ```
 
-## Expanding the ESLint configuration
+3.  **Development Server:**
+    To start the development server with Hot Module Replacement (HMR):
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+    This will typically serve the application at `http://localhost:5173`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Build for Production
+
+To create a production-ready optimized build of the application:
+
+1.  **Build Command:**
+    Run the build script:
+    ```bash
+    npm run build
+    # or
+    yarn build
+    ```
+    This command will bundle your application into static files in the `dist` directory, optimizing them for performance and size.
+
+2.  **Serving the Production Build:**
+    You can preview the production build locally by installing a static file server (e.g., `serve`) and running:
+    ```bash
+    npm install -g serve
+    serve -s dist
+    ```
+    This will serve the optimized application from the `dist` directory.
