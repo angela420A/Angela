@@ -16,8 +16,12 @@
     font-weight: bold;
 }
 
+/* .logo > a:active{
+    color: blue;
+} */
+
 .navbar-content {
-    width: 70%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     font-weight: 500;
@@ -34,10 +38,6 @@
 
 .nav-link > li:hover{
     cursor: pointer;
-}
-
-.nav-connect{
-    margin: 0 300px 0 0;
 }
 
 .nav-connect > div{
