@@ -50,8 +50,56 @@
     -webkit-text-fill-color: transparent;
 }
 
+.hm-content-text {
+    margin-bottom: 40px;
+}
+
 .hm-content-text p{
     color: #c5c5c5;
     text-align: center;
     font-size: 18px;
 }
+
+.hm-content-button a{
+    background-color: #f0f0f0;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid buttonborder;
+    border-style: outset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.hm-content-button a > span{
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    transition: 0.5s;
+}
+
+.hm-content-button a > span::after{
+    content: '\00bb';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.hm-content-button a:active{
+    border: 1px solid transparent;
+}
+
+.hm-content-button a:hover span{
+    padding-right: 25px;
+}
+
+.hm-content-button a:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+

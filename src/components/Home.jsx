@@ -8,13 +8,18 @@ function Home(){
             </div>
             <div className="home-content">
                 <div className="hm-content-title">
-                    <h1>Hello! I'm <span>Angela</span></h1>
+                    <h1>hi! I'm <span>Angela</span></h1>
                 </div>
                 <div className="hm-content-text">
                     <p>I'm Angela, an ML/AI Engineer based in Taipei City.</p>
                     <p> I am fascinated by the challenge of translating complex models into robust, user-facing products.</p>
                 </div>
-                <div className="hm-content-button"></div>
+                <div className="hm-content-button">
+                    {/* mailto:angelaguo309@gmail.com */}
+                    <a href="#"> 
+                        <span>Hi there!</span>
+                    </a>
+                </div>
             </div>
         </div>
     )
