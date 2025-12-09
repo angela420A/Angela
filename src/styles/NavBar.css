@@ -38,10 +38,7 @@
     cursor: pointer;
 }
 
-.nav-connect > div{
+.nav-connect > a{
+    color: #ffffff;
     margin: 5px 15px 0 0;
-}
-
-.nav-connect > div:hover{
-    cursor: pointer;
 }

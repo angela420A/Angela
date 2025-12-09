@@ -26,15 +26,15 @@ function NavBar(){
                     </li>
                 </ul>
                 <div className="nav-content-item nav-connect">
-                    <div>
+                    <a href="#">
                         <MdOutlineEmail size={iconSize} />
-                    </div>
-                    <div>
+                    </a>
+                    <a href="#">
                         <FaGithub size={iconSize} />
-                    </div>
-                    <div>
+                    </a>
+                    <a href="#">
                         <FaLinkedin size={iconSize} />
-                    </div>
+                    </a>
                 </div>
             </div>
         </nav>
