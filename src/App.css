@@ -5,4 +5,14 @@
 .container-body{
     background-color: #161513;
     height: 100vh;
+    display: block;
+    scroll-behavior: smooth;
+}
+
+.container-body > div{
+    padding-bottom: 100px;
+}
+
+.container-body > div:first-child{
+    padding-top: 150px;
 }

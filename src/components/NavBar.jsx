@@ -12,10 +12,10 @@ function NavBar(){
             </div>
             <div className="navbar-content">
                 <ul className="nav-content-item nav-link">
-                    <li href="#">
+                    <li href="#home-page">
                         Home
                     </li>
-                    <li href="#">
+                    <li href="#about-page">
                         About
                     </li>
                     <li href="#">

@@ -2,7 +2,7 @@ import '../styles/Home.css'
 
 function Home(){
     return (
-        <div className="home">
+        <div id='home-page' className="home">
             <div className="home-image">
                 <img src="https://picsum.photos/200"></img>
             </div>
