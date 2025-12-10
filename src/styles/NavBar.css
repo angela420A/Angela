@@ -5,7 +5,6 @@
 }
 
 .logo{
-    width: 30%;
     display: flex;
     justify-content: right;
 }
@@ -18,9 +17,7 @@
 }
 
 .navbar-content {
-    width: 40%;
     display: flex;
-    justify-content: space-between;
     font-weight: 500;
     color: #ffffff;
 }
@@ -32,10 +29,15 @@
 
 .nav-link > li{
     margin: 0 15px 0 0;
+    font-size: 14px;
 }
 
 .nav-link > li:hover{
     cursor: pointer;
+}
+
+.nav-connect{
+    margin-left: 100%;
 }
 
 .nav-connect > a{

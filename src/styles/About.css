@@ -1,0 +1,12 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: left;
+}
+
+.about-title h1{
+    background: linear-gradient(135deg, #35b9fc, #7704bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin  } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
 function NavBar(){
-    const iconSize = 23;
+    const iconSize = 20;
 
     return(
         <nav className="navbar">
