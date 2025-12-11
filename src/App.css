@@ -30,3 +30,23 @@
     margin: 0 50px;
     width: 900px;
 }
+
+@media screen and (max-width: 430px) {
+    .container-header nav{
+        width: 400px
+    }
+
+    .container-body > div{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .container-header nav{
+        width: 800px;
+    }
+
+    .container-body > div{
+        width: 800px;
+    }
+}

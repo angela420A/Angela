@@ -44,3 +44,28 @@
     color: #ffffff;
     margin: 5px 15px 0 0;
 }
+
+
+@media screen and (max-width: 912px) {
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        padding-bottom: 10px;
+    }
+
+    .navbar-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link{
+        padding-bottom: 10px;
+    }
+
+    .nav-connect{
+        margin-left: 0%;
+    }
+}
