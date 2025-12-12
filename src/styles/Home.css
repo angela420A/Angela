@@ -38,7 +38,7 @@
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: typing 3.5s steps(40, end), blink-caret 1.0s ease-out infinite;
+    animation: typing 2.5s steps(40, end), blink-caret 1.0s ease-out infinite;
 }
 
 @keyframes typing{
@@ -110,3 +110,13 @@
     right: 0;
 }
 
+@media screen and (max-width: 430px) {
+    .hm-content-text p{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .hm-content-text p:first-child{
+        padding-bottom: 10px;
+    }
+}
