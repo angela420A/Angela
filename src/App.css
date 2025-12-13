@@ -1,3 +1,7 @@
+.container{
+    width: 100%;
+}
+
 .container-header{
     background-color: #222222;
     display: flex;
@@ -31,22 +35,14 @@
     width: 900px;
 }
 
-@media screen and (max-width: 430px) {
-    .container-header nav{
-        width: 400px
-    }
-
-    .container-body > div{
-        width: 400px;
+/* @media screen and (min-width: 430px) {
+    .container{
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 912px) {
-    .container-header nav{
-        width: 800px;
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 100%;
     }
-
-    .container-body > div{
-        width: 800px;
-    }
-}
+} */
