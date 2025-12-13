@@ -47,7 +47,10 @@
 @media screen and (min-width: 1024px) {
     .navbar{
         flex-direction: row;
-        align-items: none;
+    }
+
+    .logo{
+        margin: 0;
     }
 
     .logo a{
@@ -56,6 +59,10 @@
 
     .navbar-content{
         display: flex;
+    }
+
+    .nav-link{
+        margin: 0;
     }
 
     .nav-connect{
