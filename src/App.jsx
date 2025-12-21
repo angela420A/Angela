@@ -2,7 +2,8 @@
 import './App.css'
 import NavBar from './components/NavBar';
 import Home from './components/Home';
-import About from './components/About'
+import About from './components/About';
+import Experience from './components/Experience';
 
 function App() {
   return(
@@ -13,6 +14,7 @@ function App() {
       <div className='container-body'>
         <Home />
         <About />
+        <Experience />
       </div>
     </div>
   )

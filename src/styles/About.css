@@ -1,24 +1,24 @@
-.about{
+/* .about{
     display: flex;
     flex-direction: column;
-}
-
-/* .auto-show{
-    animation: about-apppear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 100vh;
 } */
 
-/* @keyframes about-apppear{
+.about-auto-show{
+    animation: about-apppear both;
+    animation-timeline: view();
+    animation-range: entry 55% cover 100vh;
+}
+
+@keyframes about-apppear{
     from{
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(200px);
     }
     to{
         opacity: 1;
         transform: translateY(0);
     }
-} */
+}
 
 .about-title{
     margin-bottom: 20px;
@@ -33,7 +33,7 @@
 
 .about-content{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 

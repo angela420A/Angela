@@ -1,0 +1,10 @@
+.experience-title{
+    margin-bottom: 20px;
+}
+
+.experience-title h1{
+    background: linear-gradient(135deg, #35b9fc, #7704bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 200px;
+}
