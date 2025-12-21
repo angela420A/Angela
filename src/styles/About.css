@@ -1,12 +1,97 @@
 .about{
     display: flex;
     flex-direction: column;
-    align-items: self-start;
-    justify-content: left;
+}
+
+/* .auto-show{
+    animation: about-apppear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+} */
+
+/* @keyframes about-apppear{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+.about-title{
+    margin-bottom: 20px;
 }
 
 .about-title h1{
     background: linear-gradient(135deg, #35b9fc, #7704bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: 180px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content-text{
+    width: 60%;
+}
+
+.about-content-text div{
+    margin-bottom: 20px;
+}
+
+.about-content-text p{
+    color: #ffffff;
+    font-size: 15px;
+    /* text-align: justify; */
+    letter-spacing: .5px;
+}
+
+.content-text-intro a{
+    background: linear-gradient(135deg, #35b9fc, #7704bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-text-skill p{
+    margin-bottom: 10px;
+}
+
+.content-text-skill li{
+    color: #ffffffc5;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.content-text-skill li::before{
+    content: "👉🏻";
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.ct-text-skill-list{
+    display: flex;
+}
+
+.ct-text-skill-list ul:first-child{
+    margin-right: 40px;
+}
+
+.about-content-image{
+    width: 40%;
+}
+
+.content-image-pfp{
+    overflow: hidden;
+    border-radius: 100px;
+    margin: 0 30px;
+}
+
+.content-image-pfp img{
+    width: 100%;
 }
