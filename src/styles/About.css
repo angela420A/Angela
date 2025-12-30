@@ -88,8 +88,12 @@
 
 .content-image-pfp{
     overflow: hidden;
-    border-radius: 100px;
-    margin: 0 30px;
+    border-radius: 30px;
+    /* margin: 0 30px; */
+    margin-left: auto;
+    max-width: 250px;
+    max-height: 300px;
+    box-shadow: 10px 5px 5px #ffffff1f;
 }
 
 .content-image-pfp img{

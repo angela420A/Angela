@@ -38,7 +38,7 @@ function About(){
                     </div>
                     <div className='about-content-image'>
                         <div className='content-image-pfp'>
-                            <img src="https://camo.githubusercontent.com/7ebcb73f313ec96ab95b8c5514e50b64896a776da8fb6a018b4a7a199a1907ea/68747470733a2f2f692e70696e696d672e636f6d2f353634782f38302f63312f61632f38306331616337633738393531316439323865373361333662653865643537382e6a7067" alt="" />
+                            <img src="/assets/S__16351331.jpg" alt="" />
                         </div>
                     </div>
                 </div>

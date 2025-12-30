@@ -8,7 +8,14 @@ function Experience(){
                     <h1>/ Experience</h1>
                 </div>
                 <div className='experience-content'>
-                    <div className='ex-content-company'></div>
+                    <div className='ex-content-company'>
+                        <ul>
+                            <li>Gemania</li>
+                            <li>TenMax</li>
+                            <li>Trend Micro</li>
+                            <li>Gamania</li>
+                        </ul>
+                    </div>
                     <div className='ex-content-desc'></div>
                 </div>
             </div>
