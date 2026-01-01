@@ -10,7 +10,9 @@ function App() {
   return(
     <div className='container'>
       <div className='container-header'>
-        <NavBar />
+        <div className='ct-header-background'>
+          <NavBar />
+        </div>
       </div>
       <div className='container-body'>
         <Home />
