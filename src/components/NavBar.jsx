@@ -1,4 +1,4 @@
-import '../styles/NavBar.css'
+import '../styles/NavBar.css';
 import { FaGithub, FaLinkedin  } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 

@@ -1,0 +1,43 @@
+[
+    {
+        "companyName": "Gamania",
+        "jobTitle": "AI Engineer @ ",
+        "duration": "APR 2025 - PRESENT",
+        "docs": [
+            ". . ."
+        ]
+    },
+    {
+        "companyName": "TenMax",
+        "jobTitle": "Machine Learning Engineer @ ",
+        "duration": "MAY 2024 - APR 2025",
+        "docs": [
+            "Developed a recommendation system based on semantic analysis and similarity measurement, combining fine-tuned BERT embeddings with matrix factorization techniques to generate personalized and context-aware recommendations.",
+            "Developed and optimized Golang RESTful APIs supporting scalable AI workflows for model inference and customer data transmission; enabled real-time data processing and storage in BigQuery and AlloyDB, ensuring seamless data retrieval and AI-powered decision-making.",
+            "Implemented and optimized CI/CD pipelines using Cloud Build and Cloud Functions to automate deployment processes, improving system stability, observability, and operational efficiency.",
+            "Built a scalable, customized analytics dashboard by integrating LookerML, Looker Extension API, Cloud Run, and Gemini; unified multi-source data to generate actionable AI-driven insights for business intelligence."
+        ]
+    },
+    {
+        "companyName": "Trend Micro",
+        "jobTitle": "AI Engineer @ ",
+        "duration": "AUG 2023 - MAY 2024",
+        "docs": [
+            "Designed and deployed AI chatbots for Commercial & Consumer use cases using RAG architecture combined with GPT-4/3.5, supporting both English and Japanese; significantly improved document retrieval efficiency and reduced customer support workload by 43%.",
+            "Integrated Azure AI Search as the vector store to manage retrievable embedding vectors; monitored vector index size and capacity to ensure optimal retrieval performance and cost-efficiency.",
+            "Fine-tuned LLMs with product knowledge and brand-specific tone, enhancing response consistency and accuracy in customer interactions.",
+            "Implemented Responsible AI mechanisms within the RAG framework, monitoring and validating LLM inputs and outputs against predefined rules and ethical standards to improve content safety and trustworthiness.",
+            "Collaborated with the Data Team to complete ETL pipelines and integrated structured data into Azure SQL; worked closely with UI/UX designers to co-develop a user-facing interface.",
+            "Advanced to the final round in Fukuoka, Japan, at an AI Hackathon, demonstrating technical innovation and cross-functional collaboration."
+        ]
+    },
+    {
+        "companyName": "Gamania",
+        "jobTitle": "Software Engineer Intern @ ",
+        "duration": "Dec 2022 - Aug 2023",
+        "docs": [
+            "Contributed to backend system development to enhance platform performance and scalability for production-level applications.",
+            "Collaborated with UI/UX designers to ensure seamless integration of new features into the beanfun! mobile app, aligning user experience with technical implementation."
+        ]
+    }
+]
