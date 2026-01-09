@@ -43,6 +43,7 @@
     cursor: pointer;
     position: relative;
     font-size: 15px;
+    overflow: hidden;
 }
 
 .company.active-company {
@@ -57,6 +58,15 @@
     height: 90%;
     width: 2px;
     background: #7704bf;
+}
+
+@keyframes run {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
 }
 
 .ex-content-desc{
@@ -99,14 +109,15 @@
 
 .job p:not(:nth-child(2)){
     margin-bottom: 10px;
-    font-size: 13.5px;
+    font-size: 12.5px;
+    line-height: 1.5;
 }
 
 .job p span{
     background: linear-gradient(135deg, #35b9fc, #7704bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-right: 20px;
+    margin-right: 5px;
     font-size: 12px;
 }
 

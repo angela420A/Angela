@@ -1,42 +1,59 @@
 import '../styles/Experience.css';
 import Jobs from "../jobs.json";
+import { useState } from 'react';
 
-function JobContent(){
+function CompanyList(props) {
     const jobs = Jobs;
-    
+
     return jobs.map((item, index) => {
-        const jobKey = item.companyName.toLocaleLowerCase() + "-" + index.toString();
+        const keyId = "companylist-" + item.id;
+        const isActive = item.id === props.activeJobId;
 
-        if (index == 0){
-            return (
-                <div key={jobKey} className='job active-job' id={item.companyName.toLowerCase()}>
-                    <h2>{item.jobTitle}<span>{item.companyName}</span></h2>
-                    <p className='job-duration'>{item.duration}</p>
-                    {item.docs.map((doc, i) => {
-                        const docsKey = jobKey + "-doc-" + i.toString();
-                        
-                        return (<p key={docsKey} ><span>▶</span>{doc}</p>)
-                    })}
-                </div>
-            )
-        }
-        else{
-            return (
-                <div key={jobKey} className='job' id={item.companyName.toLowerCase()}>
-                    <h2>{item.jobTitle}<span>{item.companyName}</span></h2>
-                    <p className='job-duration'>{item.duration}</p>
-                    {item.docs.map((doc, i) => {
-                        const docsKey = jobKey + "-doc-" + i.toString();
+        return (
+            <li
+                key={keyId}
+                className={isActive ? 'company active-company' : 'company'}
+                data-id={item.id}
+                onClick={() => props.onCompanyClick(item.id)}
+            >
+                {item.companyName}
+            </li>
+        )
+    });
+};
 
-                        return (<p key={docsKey} ><span>▶</span>{doc}</p>)
-                    })}
-                </div>
-            )
-        }
-    })
-}
+function JobContent(props) {
+    const jobs = Jobs;
 
-function Experience(){
+    return jobs.map((item, index) => {
+        const keyId = "jobcontent-" + item.id;
+        const isActive = item.id === props.activeJobId;
+
+        return (
+            <div 
+                key={keyId} 
+                className={isActive ? 'job active-job' : 'job'}
+                id={item.id}
+            >
+                <h2>{item.jobTitle}<span>{item.companyName}</span></h2>
+                <p className='job-duration'>{item.duration}</p>
+                {item.docs.map((doc, i) => {
+                    const docsKey = keyId + "-doc-" + i.toString();
+
+                    return (<p key={docsKey} ><span>▶</span>{doc}</p>)
+                })}
+            </div>
+        )
+    });
+};
+
+function Experience() {
+    const [activeJobId, setActiveJobId ] = useState(Jobs[0]?.id || null);
+
+    const handleCompanyClick = (jobId) => {
+        setActiveJobId(jobId);
+    };
+
     return (
         <div id='experience-page' className='experience'>
             <div className='experience-auto-show'>
@@ -46,14 +63,11 @@ function Experience(){
                 <div className='experience-content'>
                     <div className='ex-content-company'>
                         <ul>
-                            <li className='company active-company' data-id="gamania">Gemania</li>
-                            <li className='company' data-id="tenmax">TenMax</li>
-                            <li className='company' data-id="trend-micro">Trend Micro</li>
-                            <li className='company' data-id="gamania-intern">Gamania</li>
+                            <CompanyList activeJobId={activeJobId} onCompanyClick={handleCompanyClick} />
                         </ul>
                     </div>
                     <div className='ex-content-desc'>
-                        <JobContent />
+                        <JobContent activeJobId={activeJobId} />
                     </div>
                 </div>
             </div>
